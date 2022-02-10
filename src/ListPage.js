@@ -13,7 +13,7 @@ export default function ListPage() {
 
       setGames(gotGames);
     }
-    fetch();
+    get();
   }, []);
   return (
     <div className='list games'>
