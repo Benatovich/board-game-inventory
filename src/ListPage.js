@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { getGames } from './services/fetch-utils';
+import GamesList from './GamesList';
 import Game from './Game';
 
 export default function ListPage() {
@@ -15,10 +16,11 @@ export default function ListPage() {
     }
     get();
   }, []);
+
   return (
-    <div className='list games'>
+    <div className='games'>
       {/* map through the games in state and render Game components */}
-      { games.map(game => <Game key={game.id} game={game}/>)}
+      <GamesList games={games} />
     </div>
   );
 }
