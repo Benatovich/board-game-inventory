@@ -4,6 +4,10 @@ body, html, #root, .App {
   background-size: cover;
 }
 
+.my-active-class {
+  background-color: blueviolet;
+}
+
 .App {
   display: grid;
   grid-template-rows: 75px 1fr;

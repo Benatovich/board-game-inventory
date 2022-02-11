@@ -45,8 +45,8 @@ export default function App() {
           {
             user &&
             <div>
-              <NavLink exact activeClassName='active-link' to="/board-games">Games List</NavLink>
-              <NavLink exact activeClassName='active-link' to="/create">Create</NavLink>
+              <NavLink exact activeClassName='my-active-class' to="/board-games">Games List</NavLink>
+              <NavLink exact activeClassName='my-active-class' to="/create">Create</NavLink>
               <a onClick={handleLogout}>Logout</a>
             </div>
           }
